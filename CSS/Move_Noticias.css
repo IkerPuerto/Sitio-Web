@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Cabecera*/
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+.logo {
+    height: 160px;
+}
+
+/*Cuerpo de la pagina*/
+.centro {
+    display: flex;
+}
+
+main {
+    display: flex;
+    width: 80%;
+}
+
+/*Zona que cambia*/
+.cuerpo_noticias {
+    background-color:rgb(0, 56, 94);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 6%;
+}
+.titulo {
+    text-align: center;
+    padding: 2%;
+    font-size: 45px;
+    color: aliceblue;
+}
+.noticia {
+    border: solid 0.5px;
+    margin: 5px;
+    display: flex;
+    background-color: aliceblue;
+    position: relative;
+}
+.cuerpo_noticia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.titulo_noticia {
+    text-align: center;
+    font-size: 30px;
+}
+.descripcion {
+    display: block;
+    padding: 2%;
+    font-size: 20px;
+}
+button {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    font-size: 15px;
+    padding: 6px;
+    background-color: seagreen;
+    border-radius: 10Px;
+    border: none;
+}
+button:hover {
+    background-color: palevioletred
+}
+
+/*Menu de navegacion*/
+.navegacion{
+    display: flex;
+    background-color: rgb(196, 80, 3);
+    width: 3%;
+    height: 220px;
+    justify-content: center;
+    border-radius: 20px;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+.icono {
+    width: 25px;
+    height: auto;
+}
+
+/*Menu de viajes*/
+.destacados {
+    background-color:rgb(0, 56, 94);
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.titulo_destacados {
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+    height: max-content;
+    padding: 30px;
+    font-size: 40px;
+    
+}
+.viajes_destacados{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1px;
+}
+a {
+    display:flex;
+    align-items: center;
+}
+.contenedor_imagen {
+    display: flex;
+    position: relative;
+    width: 46%;
+    border: solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+    transition: transform 0.3s;
+    align-items: center;
+}
+.lugar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.texto_encima {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+.contenedor_imagen:hover {
+    transform: scale(1.1);
+    z-index: 999;
+    left:-10px
+}
+
+/*Pie de página*/
+.derechos {
+    background-color: rgb(196, 80, 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/*Boton para volver arriba*/
+aside {
+    position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+.flecha {
+    width: 35px;
+    height: auto;
+}

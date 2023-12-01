@@ -1,0 +1,98 @@
+<!--
+-Iker Puerto Sanchez
+-01/12/2023
+-LMSG
+-LMSG02 - Tarea evaluativa02
+-Diseño de nuestra primera página web
+-Autoevaluación: https://www.youtube.com/watch?v=bw5_HAgvT5M
+-Link del repositorio:  -->
+<!DOCTYPE html>
+<html lang="es">
+  <!--Cabecera-->
+<head>
+  <meta charset="utf-8">
+  <title>Página web Move/Formulario</title>
+  <meta name="description" content="Página web de viajes">
+  <meta name="keywords" content="html, Viajes, Vuelos, Visitar">
+  <link rel="stylesheet" href="CSS/Move_Formulario.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="Imagenes/logo-pagina.png" alt="muevete">
+    </a>
+  </header>
+  <div class="centro">
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html"><img class="icono" src="Imagenes/Home.png" alt="Inicio"></a></li>
+        <li><a href="Move_Noticias.html"><img class="icono" src="Imagenes/Noticias.png" alt="Noticias"></a></li>
+        <li><a href="Move_Viajes.html"><img class="icono" src="Imagenes/Avion.png" alt="Viajes"></a></li>
+        <li><a href="Move_Formulario.html"><img class="icono" src="Imagenes/Formulario.png" alt="Formulario"></a></li>
+      </ul>
+    </nav>
+    <!--esto es lo que canbia en todas las páginas-->
+    <main>
+      <form action="mailto:ipuerto@birt.eus" method="get">
+        <p class="titulo_info">Nombre y Apellidos:</p><input type="text" name="Nombre_Apellido" input />
+        <p class="titulo_info">Correo:</p><input type="text" name="correo" value="correo@ejemplo.com" input />
+        <select id="desplegable" name="viajes">
+          <option value="Italia">Italia</option>
+          <option value="Marruecos">Marruecos</option>
+          <option value="Nueva York" selected>Nueva York</option>
+          <option value="Sidney">Sidney</option>
+          <option value="Paris">Paris</option>
+          <option value="Egipto">Egipto</option>
+        </select>
+        <textarea id="texto" name="mensaje" rows="5" cols="15">Más información</textarea>
+        <button type="submit">👍</button>
+      </form>
+    </main>
+    <!--hasta aquí-->
+    <nav class="destacados">
+      <h1 class="titulo_destacados">
+        Viajes destacados
+      </h1>
+      <footer class="viajes_destacados">
+        <div class="contenedor_imagen">
+          <a href="Move_Viaje_Info.html">
+            <img class="lugar" src="Imagenes/Italia.png" alt="Italia">
+            <p class="texto_encima">Italia</p>
+          </a>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Marruecos.png" alt="Marruecos">
+          <p class="texto_encima">Marruecos</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Nueva York.png" alt="Nueva York">
+          <p class="texto_encima">Nueva York</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Sidney.png" alt="Sidney">
+          <p class="texto_encima">Sidney</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Paris.png" alt="Paris">
+          <p class="texto_encima">Paris</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Egipto.png" alt="Egipto">
+          <p class="texto_encima">Egipto</p>
+        </div>
+      </footer>
+    </nav>
+  </div>
+  <footer class="derechos">
+    <h4>Iker Puerto Sánchez</h4>
+    <h4>BIRTLH ©</h4>
+    <p>Esta es una página educativa</p>
+    <p>Todas las imágenes pertenecen a su autor</p>
+  </footer>
+  <aside>
+    <a href="#top"><img class="flecha" src="Imagenes/Flecha.png"></a>
+  </aside>
+</body>
+
+</html>

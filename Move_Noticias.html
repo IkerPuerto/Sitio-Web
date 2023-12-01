@@ -1,0 +1,123 @@
+<!--
+-Iker Puerto Sanchez
+-01/12/2023
+-LMSG
+-LMSG02 - Tarea evaluativa02
+-Diseño de nuestra primera página web
+-Autoevaluación: https://www.youtube.com/watch?v=bw5_HAgvT5M
+-Link del repositorio:  -->
+<!DOCTYPE html>
+<html lang="es">
+  <!--Cabecera-->
+<head>
+  <meta charset="utf-8">
+  <title>Página web Move/Noticias</title>
+  <meta name="description" content="Página web de viajes">
+  <meta name="keywords" content="html, Viajes, Vuelos, Visitar">
+  <link rel="stylesheet" href="CSS/Move_Noticias.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="Imagenes/logo-pagina.png" alt="muevete">
+    </a>
+  </header>
+  <div class="centro">
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html"><img class="icono" src="Imagenes/Home.png" alt="Inicio"></a></li>
+        <li><a href="Move_Noticias.html"><img class="icono" src="Imagenes/Noticias.png" alt="Noticias"></a></li>
+        <li><a href="Move_Viajes.html"><img class="icono" src="Imagenes/Avion.png" alt="Viajes"></a></li>
+        <li><a href="Move_Formulario.html"><img class="icono" src="Imagenes/Formulario.png" alt="Formulario"></a></li>
+      </ul>
+    </nav>
+    <!--esto es lo que canbia en todas las páginas-->
+    <main>
+      <!--cuerpo de la pagina-->
+      <article class="cuerpo_noticias">
+        <h1 class="titulo">
+          Noticias
+        </h1>
+        <!--Cuerpo donde van los viajes-->
+        <article class="noticia">
+          <div class="cuerpo_noticia">
+            <h2 class="titulo_noticia">
+              Turismo religioso
+            </h2>
+            <p class="descripcion">
+              Murcia: Año Jubilar de Caravaca de la Cruz, un viaje único
+            </p>
+          </div>
+          <button onclick="window.open('https://www.elmundo.es/viajes/espana/2023/11/27/656461b7e85ecedb578b459d.html')">Leer más...</button>
+        </article>
+        <article class="noticia">
+          <div class="cuerpo_noticia">
+            <h2 class="titulo_noticia">
+              Arquitectura
+            </h2>
+            <p class="descripcion">
+              La peculiar ruta del Modernismo a la madrileña: las joyas secretas que pocos conocen.
+            </p>
+          </div>
+          <button onclick="window.open('https://www.elmundo.es/viajes/espana/2023/11/25/654e18b6fdddffe3818b456e.html')">Leer más...</button>
+        </article>
+        <article class="noticia">
+          <div class="cuerpo_noticia">
+            <h2 class="titulo_noticia">
+              Ránking
+            </h2>
+            <p class="descripcion">
+              Las ciudades españolas con las mejores luces de Navidad este año
+            </p>
+          </div>
+          <button onclick="window.open('https://www.elmundo.es/viajes/espana/2023/11/23/655b7c6021efa07d188b4598.html')">Leer más...</button>
+        </article>
+    </main>
+    <!--hasta aquí-->
+    <nav class="destacados">
+      <h1 class="titulo_destacados">
+        Viajes destacados
+      </h1>
+      <footer class="viajes_destacados">
+        <div class="contenedor_imagen">
+          <a href="Move_Viaje_Info.html">
+            <img class="lugar" src="Imagenes/Italia.png" alt="Italia">
+            <p class="texto_encima">Italia</p>
+          </a>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Marruecos.png" alt="Marruecos">
+          <p class="texto_encima">Marruecos</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Nueva York.png" alt="Nueva York">
+          <p class="texto_encima">Nueva York</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Sidney.png" alt="Sidney">
+          <p class="texto_encima">Sidney</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Paris.png" alt="Paris">
+          <p class="texto_encima">Paris</p>
+        </div>
+        <div class="contenedor_imagen">
+          <img class="lugar" src="Imagenes/Egipto.png" alt="Egipto">
+          <p class="texto_encima">Egipto</p>
+        </div>
+      </footer>
+    </nav>
+  </div>
+  <footer class="derechos">
+    <h4>Iker Puerto Sánchez</h4>
+    <h4>BIRTLH ©</h4>
+    <p>Esta es una página educativa</p>
+    <p>Todas las imágenes pertenecen a su autor</p>
+  </footer>
+  <aside>
+    <a href="#top"><img class="flecha" src="Imagenes/Flecha.png"></a>
+  </aside>
+</body>
+
+</html>
